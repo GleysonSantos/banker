@@ -11,5 +11,7 @@ public class Banco {
         System.out.println("Titular: "+contaDoGleyson.getTitular().getNome());
         System.out.println("Saldo: R$ "+contaDoGleyson.getSaldo());
 
+        System.out.println("Total de contas criadas: "+ContaCorrente.getTotalDeContas());
+
     }
 }

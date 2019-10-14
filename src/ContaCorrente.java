@@ -3,9 +3,14 @@ public class ContaCorrente {
     private int agencia;
     private double saldo;
     private Cliente titular;
+    private static int totalDeContas;
 
     // construtor
     public ContaCorrente(int agencia, int numero) {
+
+        //contador do total de contas criadas
+        ContaCorrente.totalDeContas++;
+
         this.agencia = agencia;
         this.numero = numero;
     }
@@ -64,4 +69,7 @@ public class ContaCorrente {
         return titular;
     }
 
+    public static int getTotalDeContas() {
+        return ContaCorrente.totalDeContas;
+    }
 }
